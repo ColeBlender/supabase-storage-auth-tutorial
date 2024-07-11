@@ -2,7 +2,8 @@
 
 Helpful docs:
 
-- https://supabase.com/docs/reference/javascript/storage-createbucket
+- https://supabase.com/docs/reference/javascript/storage-from-upload
+- https://supabase.com/docs/reference/javascript/select
 - https://supabase.com/docs/guides/database/postgres/row-level-security
 
 My links:
