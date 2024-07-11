@@ -51,11 +51,7 @@ export const deleteImage = async (imageUrl: string) => {
 
   const storage = getStorage();
 
-  console.log(bucket, path);
-
   const { data, error } = await storage.from(bucket).remove([path]);
-
-  console.log(data, error);
 
   return { data, error: error?.message };
 };

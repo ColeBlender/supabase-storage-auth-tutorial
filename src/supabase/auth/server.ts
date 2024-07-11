@@ -1,4 +1,4 @@
-import { User, DBUser } from "@/lib/types";
+import { User } from "@/lib/types";
 import { createSupabaseClient } from "../server";
 
 export function getAuth() {

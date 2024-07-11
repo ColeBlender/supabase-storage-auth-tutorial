@@ -92,7 +92,7 @@ function HomePage() {
   };
 
   return (
-    <div className="bg-slate-500 min-h-screen flex justify-center items-center flex-col gap-8">
+    <div className="min-h-screen flex justify-center items-center flex-col gap-8">
       {user ? (
         <div className="flex gap-4">
           <button onClick={() => signOutAction()}>{user.email} Sign Out</button>
@@ -113,7 +113,7 @@ function HomePage() {
       />
 
       <button
-        className="bg-slate-600 py-2 w-40 rounded-lg"
+        className="bg-slate-400 py-2 w-40 rounded-lg"
         onClick={() => imageInputRef.current?.click()}
         disabled={isPending}
       >
@@ -128,7 +128,7 @@ function HomePage() {
 
       <button
         onClick={handleClickUploadImagesButton}
-        className="bg-slate-600 py-2 w-40 rounded-lg"
+        className="bg-slate-400 py-2 w-40 rounded-lg"
         disabled={isPending}
       >
         {isPending ? "Uploading..." : "Upload Image"}
@@ -136,7 +136,7 @@ function HomePage() {
 
       <button
         onClick={handleClickDeleteImagesButton}
-        className="bg-red-700 py-2 w-40 rounded-lg"
+        className="bg-red-500 py-2 w-40 rounded-lg"
         disabled={isPending}
       >
         {isPending ? "Deleting..." : "Delete Image"}
