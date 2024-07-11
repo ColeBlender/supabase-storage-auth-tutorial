@@ -3,6 +3,7 @@
 import { loginAction } from "@/actions/auth";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
+import toast from "react-hot-toast";
 
 function LoginForm() {
   const router = useRouter();
@@ -15,7 +16,7 @@ function LoginForm() {
       if (!errorMessage) {
         router.replace("/");
       } else {
-        console.error(errorMessage);
+        toast.error(errorMessage);
       }
     });
   };
